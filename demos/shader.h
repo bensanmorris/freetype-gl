@@ -75,7 +75,21 @@ namespace ftgl {
   shader_load( const char * vert_filename,
                const char * frag_filename );
 
-
+ 
+/**
+ * Load a vertex and fragment shader sources and build program
+ *
+ * @param  vert_filename vertex shader source
+ * @param  frag_filename fragment shader source
+ *
+ * @return a handle on the built program
+ *
+ */
+  GLuint
+  shader_load_from_source( const char * vert_source,
+               const char * frag_source );
+  
+ 
 /** @} */
 
 #ifdef __cplusplus
